@@ -53,14 +53,16 @@ body {
       color: #f4511e;
       font-size: 200px;
   }
+
+
   .smalllogo_container {
     height: 105px;
     width: 90px;
     position: fixed;
     left: 50px;
-    top: 0;
     background-color: transparent;
     z-index: 9999;
+    top: 50px;
   }
   .smalllogo {
     position: relative;
@@ -86,11 +88,9 @@ body {
       font-weight: bolder;
       border: none;
   }
-
   .navbar-default {
     border: none;
   }
-
   .navbar-nav li a {
     background-color: #fff;
   }
@@ -137,6 +137,15 @@ body {
       -webkit-transform: translateY(0%);
     }
   }
+
+  #myNavbar {
+    position: absolute;
+    left: 0;
+    right: 25px;
+    font-size: 10px;
+  }
+ 
+
   @media screen and (max-width: 768px) {
     .col-sm-4 {
       text-align: center;
@@ -155,7 +164,7 @@ body {
       font-size: 12px;
     }
   }
-  @media screen and (max-width: 781px) {
+  @media screen and (max-width: 768px) {
     .navbar {
       background-color: #fff !important;
       text-align: right;
@@ -169,25 +178,16 @@ body {
       width: 90px;
       position: fixed;
       left: 50px;
-      top: 0;
       background-color: #fff;
       z-index: 9999;
   }
-    .smalllogo {
-      position: relative;
-      height: 75px;
-      width: 60px;
-      left: 15px;
-      top: 15px;
-    }
   }
-  @media screen and (min-width: 781px) {
+  @media screen and (min-width: 768px) {
     .smalllogo_container {
       height: 200px;
       width: 180px;
       position: fixed;
       left: 50px;
-      top: 0;
       background-color: transparent;
       z-index: 9999;
     }
@@ -206,6 +206,7 @@ body {
     background-color: #f4511e;
     color: #fff !important;
   }
+
   #register:hover {
     background-color: #818181 !important;
   }
